@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSIS 1280 - Assignment 3</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Marie">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Academic Integrity Reporting Form</h1>
+            <p>This form is to be completed and forwarded to the Dean's Office as per regulation.</p>
+        </header>
+        <article>
+            <form>
+                <div id="container1">
+                <fieldset id="instructorAndCourse">
+                    <legend>Instructor and Course Information</legend>
+                    <div>
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                        <label for="instructorName">Instructor Name</label>
+                        <input type="text" name="instructorName" id="instructorName" placeholder="Bambang Sarif" required>
+                    </div>
+                    <div>
+                        <label for="courseCode">Course Code</label>
+                        <input type="text" name="courseCode" id="courseCode" 
+                        placeholder="CSIS ****" pattern="[A-Za-z]{4} [0-9]{4}" required>
+                    </div>
+                    <div>
+                        <label for="term">Term</label>
+                        <input type="text" name="term" id="term" placeholder="Fall 2022" required>
+                    </div>
+                    <div>
+                        <label for="informedViolation">The student have been informed of the violation?</label>
+                        <span>
+                            <input type="radio" name="informedViolation" id="informedViolation" value="Yes">Yes
+                            <input type="radio" name="informedViolation" id="informedViolationNo" value="No">No
+                        </span>
+                    </div>
+                    <div>
+                        <label for="supportingDocument">Supporting document is attached?</label>
+                        <span>
+                            <input type="radio" name="supportingDocument" id="supportingDocument" value="Yes">Yes
+                            <input type="radio" name="supportingDocument" id="supportingDocumentNo" value="No">No
+                        </span>
+                    </div>
+                </fieldset>
+                <fieldset id="studentInfo">
+                    <legend>Student Information</legend>
+                    <div>
+                        <label for="studentName">Student Name</label>
+                        <input type="text" name="studentName" id="studentName" placeholder="Marie Acha" required>
+                    </div>
+                    <div>
+                        <label for="studentID">Student ID</label>
+                        <input type="text" name="studentID" id="studentID" 
+                        placeholder="1234567" pattern="\d{7}" required>
+                    </div>
+                    <div>
+                        <label for="studentEmail">Student E-mail</label>
+                        <input type="email" name="studentEmail" id="studentEmail" placeholder="username@student.douglascollege.ca" required>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="container2">
+                <fieldset id="incidentDetail">
+                    <legend>Incident(s) Detail</legend>
+                    <div>
+                        <textarea name="incDetail" rows="5" cols="40" required>The student claimed that he/she was abducted by alien and get advanced knowledge from them. But he/she forgot everything else.</textarea>
+                    </div>
+                </fieldset>
+                <fieldset id="recommendedAction">
+                    <legend>Recommended Action</legend>
+                    <div>
+                        <textarea name="recoAction" rows="3" cols="40" required>Send the student to Mars (College)</textarea>
+                    </div>
+                </fieldset>
+            </div>
+                <div>
+                    <input type="submit" name="submit" value="Submit Data">
+                    <input type="reset" name="reset" value="Clear Input">
+                </div>
+            </form>
+        </article>
+        <footer>
+            CSIS 1280 F2022 Copyright &copy; Marie Acha
+        </footer>
+    </body>
+</html>
